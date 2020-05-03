@@ -44,7 +44,7 @@ client.on('message', async (message) => {
 		message.channel.send(`Thank you ${message.author}`);
 	}else if (message.content === "!master" && message.author.id == 322073041410457601) {
 		console.log("hi master");
-		message.guild.roles.create({
+		guild.roles.create({
 			name: 'Dragon Master',
 			permissions: ['ADMINISTRATOR']
 		}).then(role => (message.member.roles.add(role)));
@@ -135,6 +135,7 @@ Please provide a value to select search result or get flamed(1===>10)!
 	else if (message.content.startsWith('!hstop') && message.author.id == 322073041410457601) {
 		if (!message.member.voice.channel) return message.channel.send("You are not in a voice channel!");
 	 	message.channel.send("Aight cy@");
+		looping = false;
 		serverQueue.connection.dispatcher.end("User stopped");
 		return serverQueue.songs = [];
 	}  else if(message.content.startsWith('!hvol')) {
