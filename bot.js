@@ -17,7 +17,7 @@ const queue = new Map();
 
 client.on('ready', () => {
 	console.log(`${client.user.tag} is locked and loaded!`);
-	client.user.setActivity("!hcmd to show commands", { type: "PLAYING"})
+	client.user.setActivity("WITH KAR98K", { type: "PLAYING"})
 	client.channels.cache.find(x => x.id === '704696751126478921').send('Oof, I thought I was dead there for a while!');
 });
 
