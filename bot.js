@@ -37,7 +37,7 @@ client.on('message', async (message) => {
 			.addField("!hp", "will pause the music")
 			.addField("!hr", "will resume music")
 			.addField("!hvol", "use to set volume on a scale of 5")
-			.addField("!hpl or !hplay", "the bot will leave the channel")
+			.addField("!hstop", "the bot will leave the channel")
 			.setFooter(`if u face any problems contact @SharonX#4026`);
 		message.channel.send(exampleEmbed1);
 	}else if (message.content === "!gjDragon") {
